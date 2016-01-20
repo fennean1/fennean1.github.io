@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb3a2433-e6de-4238-8f10-e0a3b1930990" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/GridAppPlus.png" afterPath="$PROJECT_DIR$/images/GridAppPlus.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="cb3a2433-e6de-4238-8f10-e0a3b1930990" name="Default" comment="" />
     <ignored path="fennean1.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -326,12 +323,12 @@
       <created>1453299071669</created>
       <option name="number" value="Default" />
       <updated>1453299071669</updated>
-      <workItem from="1453299074317" duration="2670000" />
+      <workItem from="1453299074317" duration="2725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2670000" />
+    <option name="totallyTimeSpent" value="2725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="23" width="1214" height="737" extended-state="0" />

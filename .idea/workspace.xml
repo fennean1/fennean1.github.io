@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb3a2433-e6de-4238-8f10-e0a3b1930990" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="cb3a2433-e6de-4238-8f10-e0a3b1930990" name="Default" comment="" />
     <ignored path="fennean1.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -27,7 +25,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3327645">
+            <state vertical-scroll-proportion="0.0784983">
               <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
               <folding />
             </state>
@@ -707,12 +705,12 @@
       <updated>1453299071669</updated>
       <workItem from="1453299074317" duration="12756000" />
       <workItem from="1453353139793" duration="218000" />
-      <workItem from="1453389959058" duration="6058000" />
+      <workItem from="1453389959058" duration="6156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19032000" />
+    <option name="totallyTimeSpent" value="19130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="23" width="1115" height="734" extended-state="0" />
@@ -891,7 +889,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327645">
+        <state vertical-scroll-proportion="0.0784983">
           <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
           <folding />
         </state>

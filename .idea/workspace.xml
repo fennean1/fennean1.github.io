@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb3a2433-e6de-4238-8f10-e0a3b1930990" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/landing-page.css" afterPath="$PROJECT_DIR$/css/landing-page.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="fennean1.github.io.iws" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1552901">
-              <caret line="96" column="37" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="37" />
+            <state vertical-scroll-proportion="-1.0750853">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -37,8 +38,8 @@
       <file leaf-file-name="landing-page.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/landing-page.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="14.333333">
-              <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
+            <state vertical-scroll-proportion="-5.5416665">
+              <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -136,8 +137,8 @@
         <option value="$PROJECT_DIR$/js/liquidFillGauge.js" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/CSS/style.css" />
-        <option value="$PROJECT_DIR$/css/landing-page.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/landing-page.css" />
       </list>
     </option>
   </component>
@@ -193,6 +194,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="fennean1.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fennean1.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fennean1.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -693,12 +708,12 @@
       <updated>1453299071669</updated>
       <workItem from="1453299074317" duration="12756000" />
       <workItem from="1453353139793" duration="218000" />
-      <workItem from="1453389959058" duration="5695000" />
+      <workItem from="1453389959058" duration="5987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18669000" />
+    <option name="totallyTimeSpent" value="18961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="23" width="1115" height="734" extended-state="0" />
@@ -826,14 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/landing-page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="14.333333">
-          <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/ipad.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -875,10 +882,18 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/landing-page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5416665">
+          <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1552901">
-          <caret line="96" column="37" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="37" />
+        <state vertical-scroll-proportion="-1.0750853">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>

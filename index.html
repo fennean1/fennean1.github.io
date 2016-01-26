@@ -1,208 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-    <link rel="icon" type="image/png"
-          href="img/Whiteboard%20Icon.png" />
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>NumberShapes</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <!-- jQuery must be imported before materialize -->
+  <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <link rel='stylesheet' type='text/css' href="css/materialize.min.css">
+  <link href="css/google-api-icons.css" rel="stylesheet">
+  <script type="text/javascript" src="js/nouislider.min.js"></script>
+  <script type="text/javascript" src="js/d3.min.js"></script>
+  <link rel='stylesheet' type='text/css' href="css/nouislider.min.css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom CSS -->
+  <link href="css/landing-page.css" rel="stylesheet">
+  <title>NumberShapes</title>
 </head>
-
 <body>
-
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h2 class="section-heading">Let's Learn Together</h2>
-
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://itunes.apple.com/us/app/numbershapes-whiteboard/id1052209727?mt=8" class="btn btn-default btn-lg"> <span class="network-name">Take Me To The App</span></a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/meadow.jpg"/>
     </div>
-    <!-- /.intro-header -->
+    <div class="row">
+      <div class="col s12 center-align">
 
-    <!-- Page Content -->
-
-	<a  name="services"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">NumberShapes Whiteboard</h2>
-                    <p class="lead"> We know that helping young learners with math is tough.
-                        That's why we created the <a target="_blank"
-                                                     href="https://itunes.apple.com/us/app/numbershapes-whiteboard/id1052209727?mt=8">
-                            NumberShapes Whiteboard</a>.  It's an easy and quick way to start conversation about math with your child.
-                        Interactive visualizations make thinking about numbers easy and fun. Plus we're adding more
-                        more features all the time. This is the kind of tool that will grow with your student and be something you can
-                        trust to help them learn. </p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/MultGrid_iPad.png" alt="">
-                </div>
-            </div>
-
+        <div class="section-heading">
+          <img src="img/NS-banner.png"/>
+          <br>
+          <a href="https://itunes.apple.com/us/app/numbershapes-whiteboard/id1052209727?mt=8" class="waves-light btn-large light-blue accent-3">
+            Take Me To The App
+            <i class="material-icons right">send</i>
+          </a>
         </div>
-        <!-- /.container -->
+      </div>
     </div>
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Fractions</h2>
-                    <p class="lead"> There couldn't be a simpler way to start learning about fractions.
-                        This completely gesture driven interface gives you and your student the
-                        freedom to create any fraction you like and also study reduced or equivalent fractions.</p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/Fractions_iPad.png" alt="">
-                </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h3 class="header">Let's Do Some Math!</h3>
+      <div class="divider"></div>
+      <p class="grey-text text-darken-3 lighten-3">
+        <h5 class="center-align" id="correct-ans">Correct!</h5>
+        <div class="row">
+          <h4>
+            <div class="col s5">
+              <span id="range-slider-max"></span> - 
+              <span id="range-slider-min"></span> = 
+              <span id="inc-slider-val"></span>
             </div>
-
+            <div id="inc-slider-wrapper" class="input-field col s4">
+              <div id="inc-slider-canvas"></div>
+              <div id="inc-slider"></div>
+            </div>
+          </h4>
         </div>
-        <!-- /.container -->
-
+        <br><br>
+        <div class="row">
+          <div id="range-slider-wrapper" class="col s8 offset-s2">
+            <div id="range-slider-canvas"></div>
+            <div id="range-slider"></div>
+          </div>
+        </div>
+        <br><br>
+      </p>
     </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Addition</h2>
-                    <p class="lead"> A thorough understanding Number Lines is the foundation of Number Sense.
-                    Our intuitive and elegant interface can be used for a myriad of problem solving strategies.  It's also a
-                    relaxing way to keep up with math facts and help students feel in control of their learning.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ThreeDigitAdd_iPad.png" alt="">
-                </div>
-            </div>
-
-        </div>
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Decimals</h2>
-                    <p class="lead"> Visualization is key to a solid understanding of decimals. Use this app to talk to your student about how many hundreths make a whole and demonstrate how they're added together.</p>
-                    <p class="lead">  </p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/Decimal_iPad.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
+  </div>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/grass.png">
     </div>
-    <!-- /.content-section-b -->
-
-        <!-- /.container -->
-
+    <div class="row container center-align section-video">
+      <video width="50%" height="40%" controls autoplay>
+        <source src="assets/demoVid.mp4" type="video/mp4">
+        <source src="assets/demoVid.ogg" type="video/ogg">
+      </video>
     </div>
-    <!-- /.content-section-a -->
+  </div>
+  <!-- NumberShapes Product #1 -->
+  <div class="valign-wrapper section-content">
+    <div class="row container">
+      <div class="col s12 m8 l6">
+        <h4>NumberShapes Whiteboard</h4>
+        <div class="divider"></div>
+        <p class="lead">
+          We know that helping young learners with math is tough.
+          That's why we created the <a target="_blank" href="https://itunes.apple.com/us/app/numbershapes-whiteboard/id1052209727?mt=8">
+          NumberShapes Whiteboard</a>.  It's an easy and quick way to start conversation about math with your child.
+          Interactive visualizations make thinking about numbers easy and fun. Plus we're adding more
+          more features all the time. This is the kind of tool that will grow with your student and be something you can
+          trust to help them learn. 
+        </p>
+      </div>
+      <div class="col s12 m8 l6"> 
+        <img src="img/MultGrid_iPad.png" alt="">
+      </div>
+    </div> 
+  </div>
 
+  <!-- NumberShapes Product #2 -->
+  <div class="valign-wrapper section-content">
+    <div class="row container">
+      <div class="col s12 m8 l6"> 
+        <img src="img/Fractions_iPad.png" alt="">
+      </div>
+      <div class="col s12 m8 l6">
+        <h4>Fractions</h4>
+        <div class="divider"></div>
+        <p class="lead">
+          There couldn't be a simpler way to start learning about fractions.
+          This completely gesture driven interface gives you and your student the
+          freedom to create any fraction you like and also study reduced or equivalent fractions.
+        </p>
+      </div>
+    </div> 
+  </div>
+  <!-- NumberShapes Product #3 -->
+  <div class="valign-wrapper section-content">
+    <div class="row container">
+      <div class="col s12 m8 l6">
+        <h4>Addition</h4>
+        <div class="divider"></div>
+        <p class="lead">
+          A thorough understanding Number Lines is the foundation of Number Sense.
+          Our intuitive and elegant interface can be used for a myriad of problem solving strategies.  It's also a
+          relaxing way to keep up with math facts and help students feel in control of their learning.
+        </p>
+      </div>
+      <div class="col s12 m8 l6"> 
+        <img src="img/ThreeDigitAdd_iPad.png" alt="">
+      </div>
+    </div> 
+  </div>
+  <!-- NumberShapes Product #4 -->
+  <div class="valign-wrapper section-content">
+    <div class="row container">
+      <div class="col s12 m8 l6"> 
+        <img src="img/Decimal_iPad.png" alt="">
+      </div>
+      <div class="col s12 m8 l6">
+        <h4>Decimals</h4>
+        <div class="divider"></div>
+        <p class="lead">
+          Visualization is key to a solid understanding of decimals. Use this app to talk to your student 
+          about how many hundreths make a whole and demonstrate how they're added together.
+        </p>
+      </div>
+    </div> 
+  </div>
 
-	<a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/NumberShapes" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
+  <footer class="page-footer blue-grey darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">NumberShapes</h5>
+          <p class="grey-text text-lighten-4">Helping parents teach math to their kids since 2013.</p>
         </div>
-        <!-- /.container -->
+        <div class="col l4 s12 offset-l2">
+          <h5 class="white-text">Connect</h5>
+          <div class="social-icons">
+            <a class = "tooltipped" data-position="top" data-delay="50" data-tooltip="Follow us on Twitter" href="https://twitter.com/search?q=%23numbershapes">
+              <i class="fa fa-twitter fa-lg"></i></a>
+            <a class = "tooltipped" data-position="top" data-delay="50" data-tooltip="Like us on Facebook" href="https://www.facebook.com/numbershapes/?fref=ts">
+              <i class="fa fa-facebook fa-lg"></i>
+            </a>
+            <a class = "tooltipped" data-position="top" data-delay="50" data-tooltip="About NumberShapes's creator" href="https://www.linkedin.com/in/andrew-fenner-74a756a1">
+              <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+            <a class = "tooltipped" data-position="top" data-delay="50" data-tooltip="Email me" href="mailto:andrewfenner@numbershapes.com">
+              <i class="fa fa-envelope fa-lg"></i>
+            </a>
+          </div>
+          
+        </div>
 
+      </div>
     </div>
-    <!-- /.banner -->
+    <div class="footer-copyright">
+      <div class="container">
+        Copyright 2016 NumberShapes
+      </div>
+    </div>
+  </footer>
 
+  <script type='text/javascript'>
+    $(document).ready(function () {
+      $('.parallax').parallax();
 
+    });
+  </script>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="copyright text-muted small">Copyright &copy; NumberShapes All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ns-app.js"></script>
 
 </body>
-
 </html>
